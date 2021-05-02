@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="si">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>RRP Info page</title>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8LZJSP1F9N"></script>
+
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-8LZJSP1F9N');
+</script>
+			<script>
+function loadS(){
+	console.log(localStorage.shskupina);
+	document.querySelectorAll("option[value='"+localStorage.shskupina+"']")[0].selected="selected";
+
+}
+
+function myFunction(skupina) {
+	var par = skupina+112;
+	var urnikLink = "https://www.wise-tt.com/wtt_ulfs/index.jsp?filterId=0;"+par+";0;0;";
+	if (skupina == 0){
+		urnikLink="https://www.wise-tt.com/wtt_ulfs/index.jsp?filterId=0;4;0;0;";
+		}
+	document.getElementById("urnik").href = urnikLink;
+	if (typeof(Storage) !== "undefined") {
+		if (localStorage.shskupina) {
+			localStorage.shskupina = skupina;
+		}else{
+			localStorage.shskupina = 2;
+		}
+	}
+	console.log(localStorage.shskupina+"1")
+}
+
+</script>
+			<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=5f8d76981e69750012265e3b&product=inline-reaction-buttons" async="async"></script>
+			<style>
+            @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+            @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Bebas+Neue&display=swap');
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                margin:0;
+            }
+            h1{
+                font-family: Bebas Neue;
+                color: indianred;
+                font-size:3em;
+            }
+            h2{
+                font-family: Barlow;
+                color: black;
+                font-size:1.8em;
+            }
+            h3{
+                font-family: Barlow;
+                color: dimgrey;
+                font-size:1.5em;
+            }
+            .event_t{
+                font-family: Bebas Neue;
+                color: grey;
+                font-size: 1.4em;
+
+            }
+            .event{
+                font-family: Barlow;
+                color: grey;
+                font-size: 1em;
+                text-align: left;
+
+            }
+                .announcment{
+                font-family: Barlow;
+                color: grey;
+                font-size: 1em;
+                text-align: center;
+
+            }
+            p {
+                font-family: Barlow;
+                color: indianred;
+                font-size: 1em;
+            }
+            .footer{
+                background-color: lightgray;
+                padding-top: 1em;
+                margin-top:-1em;
+                padding-left: 3em;
+                padding-bottom: 1em;
+                color: gray;
+                text-align: right;
+                padding-right: 3em;
+                font-size:1em;
+                margin-block-end: 0em;
+            }
+            .fullwidth {
+	           float: left;
+	           width: 100%;
+                }
+            .date{
+                font-family: Barlow;
+                color: indianred;
+                font-size: 1em;
+                text-align: left:
+
+            }
+            .hbr{
+                font-family: Barlow;
+                color: black;
+                font-size:3em;
+            }
+            .center {
+                text-align: center;
+                align-content: center;
+            }
+            .izbira {
+                font-family: Barlow;
+                font-size:0.9em;
+                color: black;
+
+            }
+            .izbor {
+                font-family: Barlow;
+                font-size:1em;
+                color: black;
+                padding-left: 2em;
+                padding-right: 1em;
+
+            }
+            select{
+                height:6vmin;
+                background-color: whitesmoke;
+                width: 4em;
+                border-color:grey;
+            }
+            a {
+                font-family: Barlow;
+                font-size:1em;
+                color:indianred;
+                text-decoration: none;
+            }
+            .b1 {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 18px;
+	background-color: whitesmoke;
+	width: 20%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            .b1:hover {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 18px;
+	background-color: whitesmoke;
+	width: 20%;
+                opacity: 80%;
+                cursor:pointer;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+                .b4 {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 18px;
+	background-color: whitesmoke;
+	width: 10%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            .b4:hover {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 18px;
+	background-color: whitesmoke;
+	width: 10%;
+                opacity: 80%;
+                cursor:pointer;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+
+            .b3 {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 18px;
+	background-color: darkgray;
+	width: 20%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            .b3:hover {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 18px;
+	background-color: darkgray;
+	width: 20%;
+	height: 6vmin;
+                opacity: 80%;
+                cursor:pointer;
+	margin-bottom: 2vmin;
+}
+            .b2 {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 18px;
+	background-color: indianred;
+	width: 40%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            .b2:hover {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 18px;
+	background-color: indianred;
+	width: 40%;
+                opacity: 80%;
+                cursor: pointer;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            @media (max-width: 800px) {
+                .b1 {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 1em;
+	background-color: whitesmoke;
+	width: 40%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+                .b4 {
+	font-family: Barlow;
+	border: 0px;
+	color: grey;
+	font-size: 1em;
+	background-color: whitesmoke;
+	width: 40%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            .b2 {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 1em;
+	background-color: indianred;
+	width: 80%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+                .b3 {
+	font-family: Barlow;
+	border: 0px;
+	color: white;
+	font-size: 1em;
+	background-color: darkgray;
+	width: 80%;
+	height: 6vmin;
+	margin-bottom: 2vmin;
+}
+            }
+
+                .i1{
+                    width:15.5em;
+                    height: 1.5em;
+                    background-color: whitesmoke;
+                    border: 2px solid gray;
+                    border-radius: 2em;
+                    padding-left: 1em;
+                    font-family: Barlow;
+                    color: gray;
+                    height:2em;
+                    font-size: 1em;
+                }
+                .i2{
+                    width:7em;
+                    height: 1.5em;
+                    background-color: whitesmoke;
+                    border: 2px solid gray;
+                    border-radius: 2em;
+                    padding-left: 1em;
+                    font-family: Barlow;
+                    color: gray;
+                    height:2em;
+                    font-size: 1em;
+                }
+        </style>
+		</head>
+		<body onload="loadS()">
+			<div class="center" style="padding-top:3em">
+				<h1>RRP 2020 INFO PAGE</h1>
+			</div>
+			<div class="center">
+				<a href="#povezave">POVEZAVE</a>
+				<span style="padding-right: 1em"></span>
+				<a href="#timetable">URNIK</a>
+				<span style="padding-right: 1em"></span>
+				<a href="#koledar">KOLEDAR</a>
+				<span style="padding-right: 1em"></span>
+				<a>UPORABNO</a>
+			</div>
+			<div style="margin-top: 5em; padding-top: 3em;padding-bottom: 4em; width:100%; display:block; background-color: whitesmoke">
+				<div class="center">
+					<img style="width:3em" src="https://cdn0.iconfinder.com/data/icons/business-management-line-2/24/megaphone-512.png">
+					</div>
+					<div class="center" style="padding-top: 2em">
+						<p>22. februar 2021</p>
+					</div>
+					<div class="center" style="width: 60%; padding-left: 20%">
+						<p class="announcment">V naslednjem tednu bodo posodobljene vse povezave. Naprošam vas da me kontaktirate, če povazave ne bodo prave.</p>
+                        <p class="announcment">Ko bova izvedela datume preizkusov bodo tudi ti objavljeni spodaj.</p>
+					</div>
+                <!--<div class="center" style="width: 60%; padding-left: 20%; padding-top: 4vmin">
+                    <form name="preverjanje">
+                        <span> <input class="i2" name="ime" type="text" placeholder="Ime" required>
+                        <input class="i2" name="priimek" type="text" placeholder="Priimek" required></span>
+                        <span style="display:block; padding-top: 0.5em"></span><input class="i1" name="discord" type="text" placeholder="Discord uporabniško ime" required>
+                        <span style="display:block; padding-bottom: 1em; padding-top: 0.5em"><input class="i2" style="text-align: center;padding-left: 0;width:10em" name="vpisna_stevilka" type="text" placeholder="Vpisna številka" required></span>
+                        <span style="display:block; padding-bottom: 0.5em"><input type="checkbox" name="pogoj" required><label for="pogoj" class="announcment">Strinjam se s shranjevanjem mojih podatkov</label></span>
+                        <button class="b2" style="width:5em" type="submit">Potrdi</button>
+                        </form>
+                    <span><p id="success"></p></span>
+                        <script>
+                            const scriptURL = 'https://script.google.com/macros/s/AKfycbzYM2SRI-mViPTZ_6QwRa6dhziCH3fW4Oj-1AeoBoz8EEgrc4MXKxhh/exec'
+                            const form = document.forms['preverjanje']
+                            if (form){
+                                form.addEventListener('submit', e => {
+                                e.preventDefault()
+                            document.getElementById('success').innerHTML = "Hvala! Vnos bo preverjen.";
+                            setTimeout(fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                                .then(response => console.log('Hvala! Vnos bo preverjen.', response))
+                                .catch(error => console.error('Napaka!', error.message)),2000);
+                                })
+                            }
+                        </script>
+                </div>-->
+
+				</div>
+				<div id="povezave" style="padding-top: 4em; width:100%; display: block">
+					<div>
+						<div style="padding-bottom: 0em"></div>
+						<div style="padding-top: 0em; padding-left: 10%;padding-right: 10%; width: 80%">
+							<div style="float:left; width:33.3%" class="center">
+								<h3>Gradiva</h3>
+								<a href="https://global.gotomeeting.com/join/976551581">
+									<button class="b2">Predavanje</button>
+								</a>
+
+							</div>
+							<div style="float:left; width:33.3%" class="center">
+								<h3>Matematika</h3>
+								<a href="https://uni-lj-si.zoom.us/j/99728124362?pwd=aXNOemJBUWhxRXZPZDVKTDhMejBJZz09">
+									<button class="b2">Predavanje</button>
+								</a>&nbsp;
+								<a href="https://uni-lj-si.zoom.us/j/93519712885?pwd=c0wvdGlxLy9mZ29wMU91MFFGcDEwUT09">
+									<button class="b1">1-5</button>
+								</a>&nbsp;
+								<a href="https://uni-lj-si.zoom.us/j/98708524565?pwd=QkdURlk2SmVDMU95dFRHS2RVY24yZz09">
+									<button class="b1">6-10</button>
+								</a>&nbsp;
+								<a href="https://uni-lj-si.zoom.us/j/94186775011?pwd=UzNzYS9wODUwUU40T0hCSFdjeFVBQT09">
+									<button class="b1">11-15</button>
+								</a>&nbsp;
+								<a href="https://uni-lj-si.zoom.us/j/99363674379?pwd=OG14TlRwUHRJYWEvckpta3JteXVvdz09">
+									<button class="b1">16-20</button>
+								</a>&nbsp;
+								<a href="https://uni-lj-si.zoom.us/j/99544462818?pwd=OWhnMURwM2NuNGNMQmdyKzdCYlQrdz09">
+									<button class="b1">21-24</button>
+								</a>
+							</div>
+							<div style="float:left; width:33.3%" class="center">
+								<h3>Trdnost</h3>
+								<a href="https://uni-lj-si.zoom.us/j/94810389843?pwd=cnlYSUptV1hPMXJ6RlhBaUROZEZ2Zz09">
+									<button class="b2">Predavanje</button>
+								</a>&nbsp;
+								<a href="https://e-ucilnica.fs.uni-lj.si/mod/zoom/view.php?id=9626">
+									<button class="b1">Vaje</button>
+								</a>
+                            </div>
+						</div>
+						<div style="padding-left: 10%;padding-right: 10%; width: 80%">
+							<div style="float:left; width:50%" class="center">
+                                <h3>Fizika</h3>
+								<a href="https://fs-uni-lj-si.webex.com/fs-uni-lj-si/j.php?MTID=mf19a692fd140855339aac97c5c084538">
+									<button class="b2">Predavanje</button>
+
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1920542/join">
+									<button class="b1">1-5</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1898360/join">
+									<button class="b1">6-10</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1898893/join">
+									<button class="b1">11-15</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1922817/join">
+									<button class="b1">16-20</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1903190/join">
+									<button class="b1">21-25</button>
+								</a>
+
+                        </div>
+							<div style="float:left; width:50%" class="center">
+								<h3>Modeliranje prostora</h3>
+								<a href="https://fs-uni-lj-si.webex.com/fs-uni-lj-si/j.php?MTID=m28bcbd8dbfac41a45bfcfc75e27bcddb">
+									<button class="b2">Predavanje</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1855364/join">
+									<button class="b4">1,2</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1923022/join">
+									<button class="b4">3,4</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1951608/join">
+									<button class="b4">5,6</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1923001/join">
+									<button class="b4">7,8</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1901705/join">
+									<button class="b4">9,10</button>
+								</a>&nbsp;
+                                <a href="https://lti.educonnector.io/webex/meetings/1951664/join">
+									<button class="b4">11,12</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1855391/join">
+									<button class="b4">13,14</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1923034/join">
+									<button class="b4">15,16</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1923014/join">
+									<button class="b4">17,18</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1855353/join">
+									<button class="b4">19,20</button>
+								</a>&nbsp;
+                                <a href="https://lti.educonnector.io/webex/meetings/1855379/join">
+									<button class="b4">21,22</button>
+								</a>&nbsp;
+								<a href="https://lti.educonnector.io/webex/meetings/1923042/join">
+									<button class="b4">23,24</button>
+								</a>
+
+							</div>
+
+					</div>
+            </div>
+					<div id="timetable" class="center" style="width:100%; float:left; display: block; margin-top: 5em;padding-top: 4em;padding-bottom: 3em; background-color: whitesmoke">
+						<div style="padding-left: 10%; width:80%;padding-right: 10%">
+							<a onclick='myFunction(Number(document.getElementById("skupine").value))' href="https://www.wise-tt.com/wtt_ulfs/index.jsp" id="urnik" target="_blank">
+								<button class="b3">Prikaži urnik</button>&nbsp;
+							</a>
+							<label class="izbor" for="skupina">Izberi skupino: </label>
+							<select class="izbira" id="skupine" name="skupine" class="" >
+								<option value="0">Skupina za vaje</option>
+								<option value="1"> 1</option>
+								<option value="2"> 2</option>
+								<option value="3"> 3</option>
+								<option value="4"> 4</option>
+								<option value="5"> 5</option>
+								<option value="6"> 6</option>
+								<option value="7"> 7</option>
+								<option value="8"> 8</option>
+								<option value="9"> 9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+							</select>
+						</div>
+					</div>
+					<div id="koledar" style="width:100%; display: block; float: left; padding-top: 5em; padding-bottom: 5em">
+						<div class="width:70%; padding-left:15%">
+							<div style="padding-bottom: 1em" class="center">
+								<h2>Koledar dogodkov</h2>
+							</div>
+                            <div style="padding-bottom: 1em" class="center">
+								<h3 style="font-size:1.3em">Kolokviji</h3>
+							</div>
+                            <div class="center">
+                                <table style="border: 0; margin-left: auto; margin-right: auto">
+                                    <tr>
+                                        <th class="event">Fizika</th>
+                                        <th class="date" style="padding-left: 2em">23. 3. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Gradiva</th>
+                                        <th class="date" style="padding-left: 2em">1. 4. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Matematika 2</th>
+                                        <th class="date" style="padding-left: 2em">8. 4. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Fizika</th>
+                                        <th class="date" style="padding-left: 2em">13. 4. 2021</th>
+                                    </tr>
+
+                                    <tr>
+                                        <th class="event">Modeliranje prostora</th>
+                                        <th class="date" style="padding-left: 2em">15. 4. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Trdnost</th>
+                                        <th class="date" style="padding-left: 2em">22. 4. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Fizika</th>
+                                        <th class="date" style="padding-left: 2em">12. 5. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Gradiva</th>
+                                        <th class="date" style="padding-left: 2em">26. 5. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Modeliranje prostora</th>
+                                        <th class="date" style="padding-left: 2em">28. 5. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Fizika</th>
+                                        <th class="date" style="padding-left: 2em">31. 5. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Matematika 2</th>
+                                        <th class="date" style="padding-left: 2em">2. 6. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Trdnost</th>
+                                        <th class="date" style="padding-left: 2em">4. 6. 2021</th>
+                                    </tr>
+
+                                </table>
+                            </div>
+
+
+
+
+                        <!--<div style="padding-bottom: 1em; padding-top: 4em" class="center">
+								<h3 style="font-size:1.3em">Izpiti</h3>
+							</div>
+							<div class="center">
+								<table style="border: 0; margin-left: auto; margin-right: auto">
+                                    <tr>
+                                        <th class="event">Elektrotehnika</th>
+                                        <th class="date" style="padding-left: 2em">25. 1. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Energije in okolje</th>
+                                        <th class="date" style="padding-left: 2em">27. 1. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Statika in kinematika</th>
+                                        <th class="date" style="padding-left: 2em">29. 1. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">OGTD</th>
+                                        <th class="date" style="padding-left: 2em">2. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Matematika</th>
+                                        <th class="date" style="padding-left: 2em">4. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Elektrotehnika</th>
+                                        <th class="date" style="padding-left: 2em">9. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Energije in okolje</th>
+                                        <th class="date" style="padding-left: 2em">10. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Statika in kinematika</th>
+                                        <th class="date" style="padding-left: 2em">12. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">OGTD</th>
+                                        <th class="date" style="padding-left: 2em">15. 2. 2021</th>
+                                    </tr>
+                                    <tr>
+                                        <th class="event">Matematika</th>
+                                        <th class="date" style="padding-left: 2em">19. 2. 2021</th>
+                                    </tr>
+                                </table>
+                        </div>-->
+					</div>
+            </div>
+					<div style="padding-top: 4em"></div>
+					<div style="width:100%; display:block; float:left; padding-top: 3em; background-color: whitesmoke">
+						<div class="center">
+							<img src="https://cdn2.iconfinder.com/data/icons/social-hand-drawn-icons/64/social_0-512.png" style="width:3em">
+							</div>
+							<div class="center">
+								<h2>KONTAKT</h2>
+							</div>
+							<div class="center">
+								<p style="color:grey; padding-bottom:1em; width: 60%; padding-left: 20%">Če imaš kakršenkoli problem in potrebuješ stopiti v stik z mentorjem letnika ali želiš, da predstavnika piševa komu od profesorjev, nama napiši e-mail.</p>
+							</div>
+							<div class="center" style="padding-bottom: 4em">
+								<a href="mailto:rrp.fs.2001@gmail.com">
+									<button class="b3" style="width:auto%">Kontaktiraj</button>
+								</a>
+							</div>
+						</div>
+						<div class="fullwidth">
+							<p class="footer">Stran izključno za interno uporabo</p>
+						</div>
+
+
+
+					</body>
+				</html>
